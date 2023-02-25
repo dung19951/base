@@ -18,11 +18,11 @@ export const authStore = defineStore({
         async login(params){
             let url = '/login'
             const response = await service.post(url, params);
-            if(response.data?.data?.success == true && response.status== 200){
-                this.token = response.data.result.token
-                this.user = response?.data.result.user
+            if(response.data?.success == true && response.status== 200){
+                this.token = response?.data.token
+                this.user = response?.data.user
             }
-
+            
             return response;
         },
         definePermissionList(item){
