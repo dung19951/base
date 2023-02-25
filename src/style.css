@@ -1,0 +1,156 @@
+body {
+  font-size: var(--bs-dropdown-font-size);
+}
+a{
+  cursor: pointer !important;
+}
+
+.container {
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 100%;
+  width: 100%;
+}
+
+.main-content__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+.table th {
+  background-color: darkcyan;
+  color: #fff;
+}
+
+.table-default {
+  max-height: 650px;
+  height: 650px;
+}
+
+.table-default thead th {
+  position: sticky;
+  top: -2px;
+  z-index: 1;
+}
+
+.select-per-page {
+  margin-top: 10px;
+}
+
+.icon-page {
+  font-size: 20px;
+}
+
+button {
+  font-size: 15px !important;
+}
+
+a:hover{
+  text-decoration: none;
+  cursor: context-menu;
+}
+
+.area-error {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.area-err {
+  padding: 6px;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.link-go:hover {
+  color: red;
+  cursor: context-menu;
+}
+
+option {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.badge-custom {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.new-line {
+  white-space: pre-wrap !important;
+}
+
+.date-control-sm {
+  padding: 0.25rem 2.5rem !important;
+  font-size: .875rem !important;
+  border-radius: 0.25rem !important;
+}
+
+.pointer-none {
+  pointer-events: none;
+}
+
+.pointer-none .input-search {
+  background-color: #e9ecef;
+  margin-bottom: 0 !important;
+}
+
+.pointer-none .selected {
+  background-color: #e9ecef !important;
+  margin-bottom: 0 !important;
+}
+
+.dashboard-app:has(.background-grey) {
+  background-color: #F0F8FF !important;
+}
+
+.bg-light-content {
+  background: #EEEEEE;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/**
+DataTable
+ */
+.table-default thead th{
+  /*top: 0;*/
+}
+table.dataTable{
+  min-width: 1200px;
+}
+table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting_asc_disabled, table.dataTable thead>tr>th.sorting_desc_disabled, table.dataTable thead>tr>td.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>td.sorting_asc_disabled, table.dataTable thead>tr>td.sorting_desc_disabled {
+  cursor: pointer;
+  /*position: relative;*/
+  padding-right: 26px;
+}
+table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_asc:before, table.dataTable thead>tr>th.sorting_asc:after, table.dataTable thead>tr>th.sorting_desc:before, table.dataTable thead>tr>th.sorting_desc:after, table.dataTable thead>tr>th.sorting_asc_disabled:before, table.dataTable thead>tr>th.sorting_asc_disabled:after, table.dataTable thead>tr>th.sorting_desc_disabled:before, table.dataTable thead>tr>th.sorting_desc_disabled:after, table.dataTable thead>tr>td.sorting:before, table.dataTable thead>tr>td.sorting:after, table.dataTable thead>tr>td.sorting_asc:before, table.dataTable thead>tr>td.sorting_asc:after, table.dataTable thead>tr>td.sorting_desc:before, table.dataTable thead>tr>td.sorting_desc:after, table.dataTable thead>tr>td.sorting_asc_disabled:before, table.dataTable thead>tr>td.sorting_asc_disabled:after, table.dataTable thead>tr>td.sorting_desc_disabled:before, table.dataTable thead>tr>td.sorting_desc_disabled:after {
+  position: absolute;
+  display: block;
+  opacity: .125;
+  right: 10px;
+  line-height: 9px;
+  font-size: .8em;
+}
+table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting_asc:before, table.dataTable thead>tr>th.sorting_desc:before, table.dataTable thead>tr>th.sorting_asc_disabled:before, table.dataTable thead>tr>th.sorting_desc_disabled:before, table.dataTable thead>tr>td.sorting:before, table.dataTable thead>tr>td.sorting_asc:before, table.dataTable thead>tr>td.sorting_desc:before, table.dataTable thead>tr>td.sorting_asc_disabled:before, table.dataTable thead>tr>td.sorting_desc_disabled:before {
+  bottom: 50%;
+  content: "▲"}
+table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_asc:after, table.dataTable thead>tr>th.sorting_desc:after, table.dataTable thead>tr>th.sorting_asc_disabled:after, table.dataTable thead>tr>th.sorting_desc_disabled:after, table.dataTable thead>tr>td.sorting:after, table.dataTable thead>tr>td.sorting_asc:after, table.dataTable thead>tr>td.sorting_desc:after, table.dataTable thead>tr>td.sorting_asc_disabled:after, table.dataTable thead>tr>td.sorting_desc_disabled:after {
+  top: 50%;
+  content: "▼"}
+table.dataTable thead>tr>th.sorting_asc:before, table.dataTable thead>tr>th.sorting_desc:after, table.dataTable thead>tr>td.sorting_asc:before, table.dataTable thead>tr>td.sorting_desc:after {
+  opacity: .6;
+}
+table.dataTable thead>tr>th.sorting_desc_disabled:after, table.dataTable thead>tr>th.sorting_asc_disabled:before, table.dataTable thead>tr>td.sorting_desc_disabled:after, table.dataTable thead>tr>td.sorting_asc_disabled:before {
+  display: none;
+}
+table.dataTable thead>tr>th:active, table.dataTable thead>tr>td:active {
+  outline: none;
+}
+
+span.tox-statusbar__branding{
+  display: none !important;
+}
