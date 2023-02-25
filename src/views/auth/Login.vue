@@ -47,7 +47,11 @@
 <script setup>
 import defaultAvatar from "../../assets/default-avatar.jpg";
 import { reactive, ref } from "vue";
+import { authStore } from "../../store/modules/authStore";
+import { useRouter } from "vue-router";
 
+const auth = authStore()
+const router = useRouter()
 const messageErr = ref({})
 const hasError = ref(false)
 
@@ -57,7 +61,13 @@ const user = ref({
 })
 
 const login = async () => {
-   
+    const response = await auth.login(user.value)
+    if (response.status == 200)
+        await router.push({ name: 'Home' })
+    else {
+        hasError.value = true
+        messageErr.value = response
+    }
 
 }
 
