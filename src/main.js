@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-// import router from './router'
-// import {pinia} from "./store";
+import router from './router'
+import {pinia} from "./store";
 import VueSweetalert2 from "vue-sweetalert2"
 import Datepicker from "@vuepic/vue-datepicker"
 import constant from "./config/constant.js"
@@ -21,7 +21,7 @@ createApp(App)
     .provide('$config', constant)
     .provide('$toast', toast)
     .provide('$moment', moment)
-    // .use(router)
-    // .use(pinia)
+    .use(router)
+    .use(pinia)
     .use(VueSweetalert2)
     .mount('#app')
